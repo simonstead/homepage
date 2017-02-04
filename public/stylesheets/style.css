@@ -13,7 +13,14 @@
 body {
   font: 14px "Raleway", Helvetica, Arial, sans-serif;
   margin: 0;
-  padding: 1rem 2rem; }
+  padding: 1rem 2rem;
+  animation: fade-in 2s; }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 a {
   color: #00B7FF; }
@@ -23,9 +30,10 @@ a {
   margin: 0; }
 
 .index .section {
-  font-size: 10px;
+  font-size: 11px;
   display: inline-flex;
-  flex-direction: column; }
+  flex-direction: column;
+  animation: fade-in 2s; }
   .index .section > h2 {
     margin-bottom: 0; }
   .index .section ul {
