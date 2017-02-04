@@ -31,4 +31,26 @@ a {
   .index .section ul {
     margin-top: 0; }
 
+header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1em;
+  border-bottom: 3px solid #efefef; }
+  header p {
+    margin: 0; }
+
+.welcome {
+  border-bottom: 3px solid #efefef; }
+  .welcome a {
+    display: inline-block;
+    padding: 1em;
+    text-decoration: none; }
+    .welcome a:hover {
+      text-decoration: underline; }
+
+.me {
+  border-radius: 5em;
+  height: 8em;
+  padding-right: 1em; }
+
 /*# sourceMappingURL=style.css.map */

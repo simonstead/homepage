@@ -3,13 +3,9 @@ extends layout
 block content
   .index
     .welcome
-      header
-        img.me(src="images/me.jpg")
-        .title-text
-          h1.title= title
-          p Welcome to the start of a homepage. Here you can find a list of things that I've done, or things I'm doing.
+      h1.title= title
+      p Welcome to the start of a homepage. Here you can find a list of things that I've done, or things I'm doing.
       a(href="/contact") #[h2 Contact Me]
-      a(href="https://www.github.com/simonstead") #[h2 Github]
     .websites.section
       h2 Websites I have made:
       ul
@@ -69,10 +65,7 @@ block content
           a(href="/movies")
             h2 Film & TV
     .section
-      h2 Research & Academia
+      h2 My CV
       ul
         li
-          h2 #[a(href="/cv") Some Research]
-        li
-          h2 #[a(href="/cv") My CV]
-          p PDF Download
+          h2 #[a(href="/cv") PDF Download]
