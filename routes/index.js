@@ -21,4 +21,11 @@ router.get('/membership', function(req, res, next) {
   res.render('membership', { title: 'Membership Landing Page' });
 });
 
+
+/* GET contact page. */
+router.get('/movies', function(req, res, next) {
+  res.render('movies', { title: 'Film & TV Work' });
+});
+
+
 module.exports = router;
