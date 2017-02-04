@@ -11,21 +11,23 @@ router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'Contact Me' });
 });
 
-/* GET contact page. */
+/* GET music page. */
 router.get('/music', function(req, res, next) {
   res.render('music', { title: 'My Music' });
 });
 
-/* GET contact page. */
+/* GET member page. */
 router.get('/membership', function(req, res, next) {
   res.render('membership', { title: 'Membership Landing Page' });
 });
 
-
-/* GET contact page. */
+/* GET movies page. */
 router.get('/movies', function(req, res, next) {
   res.render('movies', { title: 'Film & TV Work' });
 });
 
-
+/* GET contact page. */
+router.get('/contact', function(req, res, next) {
+  res.render('contact', { title: 'Get in touch' });
+});
 module.exports = router;

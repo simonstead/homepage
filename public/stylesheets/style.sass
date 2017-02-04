@@ -1,3 +1,6 @@
+@import "music"
+@import "movies"
+
 /////-------//
 /// LAYOUT //
 //--------//
@@ -15,28 +18,37 @@ a
   font-size: 4em
   margin: 0
 
-footer
-  width: 100vw
-  height: 7em
-  background-color: #efefef
-  position: fixed
-  bottom: 0
-  left: 0
+.index .section
+  font-size: 10px
+  display: inline-flex
+  flex-direction: column
+  & > h2
+    margin-bottom: 0
   & ul
-    height: 100%
-    padding: 0
-    margin: 0
-    list-style: none
-    display: flex
-    justify-content: center
-    align-items: center
-    & li
-      height: 100%
-      width: 25vw
-      border: 1px solid black
-      display: flex
-      align-items: center
-      justify-content: center
+    margin-top: 0
+
+// footer
+//   width: 100vw
+//   height: 7em
+//   background-color: #efefef
+//   position: fixed
+//   bottom: 0
+//   left: 0
+//   & ul
+//     height: 100%
+//     padding: 0
+//     margin: 0
+//     list-style: none
+//     display: flex
+//     justify-content: center
+//     align-items: center
+//     & li
+//       height: 100%
+//       width: 25vw
+//       border: 1px solid black
+//       display: flex
+//       align-items: center
+//       justify-content: center
 
 
 /////------//

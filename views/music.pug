@@ -1,23 +1,31 @@
 extends layout
 
 block content
-  .welcome.section
-    h1.title= title
-    p Welcome to the start of a homepage. Here you can find a list of things that I've done, or things I'm doing.
-  .section
-    h2 Videos:
-    hr
-    .title 2016
-    .video
-      h3 Rat Within the Grain
-      iframe(src="https://www.youtube.com/embed/4_Oo0wNJQWU", frameborder="0", allowfullscreen)
-    hr
-    .title 2012
-    .video
-      p Songbird - with Catherine Foster
-      iframe(src="https://www.youtube.com/embed/Vu1sMrYb-JQ", frameborder="0", allowfullscreen)
-    .video
-      p Roxanne - with Catherine Foster
-      iframe(src="https://www.youtube.com/embed/4_Oo0wNJQWU", frameborder="0", allowfullscreen)
-    hr
-    br
+  .music
+    .welcome
+      h1.title= title
+      p Welcome to the start of a homepage. Here you can find a list of things that I've done, or things I'm doing.
+    .soundcloud
+      iframe(width="100%", height="450", scrolling="no", frameborder="no", src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2500381&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false")
+        h2 Soundcloud
+      p Some electronic music
+    .section.videos
+      h2 Videos:
+      .years
+        .year
+          hr
+          .title 2016
+          .video
+            h3 Rat Within the Grain
+            iframe(src="https://youtube.com/embed/DapMFfwDuu4", frameborder="0", allowfullscreen)
+          hr
+        .year
+          .title 2012
+          .video
+            p Songbird - with Catherine Foster
+            iframe(src="https://www.youtube.com/embed/Vu1sMrYb-JQ", frameborder="0", allowfullscreen)
+          .video
+            p Roxanne - with Catherine Foster
+            iframe(src="https://www.youtube.com/embed/4_Oo0wNJQWU", frameborder="0", allowfullscreen)
+          hr
+        br
