@@ -4,10 +4,20 @@ block content
   .payments
     .paypal
       img.logo(src="/images/paypal.svg")
+      form(action='https://www.paypal.com/cgi-bin/webscr', method='post', target='_top')
+        input(type='hidden', name='cmd', value='_s-xclick')
+        input(type='hidden', name='encrypted', value="-----BEGIN PKCS7-----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-----END PKCS7-----")
+        input(type='image', src='https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif', border='0', name='submit', alt='PayPal – The safer, easier way to pay online!')
+        img(alt='', border='0', src='https://www.paypalobjects.com/en_GB/i/scr/pixel.gif', width='1', height='1')
     .stripe
       img.logo(src="/images/stripe.svg")
+      form(action='/your-server-side-code', method='POST')
+        script.stripe-button(src='https://checkout.stripe.com/checkout.js', data-key='pk_test_QbLf3IscXoLHG3TOh6p5qXkW', data-amount='999', data-name='Simon Stead', data-description='Widget', data-image='https://stripe.com/img/documentation/checkout/marketplace.png', data-locale='auto', data-zip-code='true', data-currency='gbp')
     .bitcoin
       img.logo(src="/images/bitcoin.svg")
+      img(src="/images/btcwallet.png")
+      .address
+        h4 1GXHUyUaMu8RnmHqApz3CuLAbGhcxbqGjT
     .invoice
       h1 Invoice
       img.me(src="/images/me.jpg")

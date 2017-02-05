@@ -19,9 +19,10 @@ body
   100%
     opacity: 1
 
+$red: #de1616
 
 a
-  color: #de1616
+  color: $red
 
 .title
   font-size: 4em
@@ -46,6 +47,8 @@ header
   border-bottom: 3px solid #efefef
   & p
     margin: 0
+  & .me
+    border: 2px solid $red
 
 .welcome
   border-bottom: 3px solid #efefef
@@ -58,7 +61,7 @@ header
 .me
   border-radius: 5em
   height: 8em
-  padding-right: 1em
+  margin-right: 1em
 
 a.tumblr
   display: flex

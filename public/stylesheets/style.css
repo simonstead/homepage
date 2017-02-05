@@ -27,22 +27,28 @@
       height: 80px;
       max-width: 80%;
       margin: 2em;
-      padding-bottom: 2em;
-      border-bottom: 2px solid #efefef; }
+      padding-bottom: 2em; }
     .payments > * form {
       display: flex;
       flex-direction: column;
       align-items: center; }
-      .payments > * form input {
-        width: 80%;
-        padding: 1rem;
-        margin: 1rem; }
       .payments > * form button {
         padding: 1rem;
         font-size: 1rem;
         border-radius: 4px;
         background-color: #efefef;
         border: 0; }
+
+.payments .invoice input {
+  width: 80%;
+  padding: 1rem;
+  margin: 1rem; }
+
+.payments .bitcoin .address {
+  width: 80%;
+  margin-top: 1em;
+  text-align: center;
+  word-break: break-all; }
 
 body {
   font: 14px "Raleway", Helvetica, Arial, sans-serif;
@@ -82,6 +88,8 @@ header {
   border-bottom: 3px solid #efefef; }
   header p {
     margin: 0; }
+  header .me {
+    border: 2px solid #de1616; }
 
 .welcome {
   border-bottom: 3px solid #efefef; }
@@ -95,7 +103,7 @@ header {
 .me {
   border-radius: 5em;
   height: 8em;
-  padding-right: 1em; }
+  margin-right: 1em; }
 
 a.tumblr {
   display: flex;
