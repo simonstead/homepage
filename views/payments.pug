@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  .payments
+    .paypal
+      img.logo(src="/images/paypal.svg")
+    .stripe
+      img.logo(src="/images/stripe.svg")
+    .bitcoin
+      img.logo(src="/images/bitcoin.svg")
+    .invoice
+      h1 Invoice
+      img.me(src="/images/me.jpg")
+      form(method="POST", action="/invoice-number")
+        input(type="text", placeholder="Enter Your invoice number")
+        button(type="submit") Submit

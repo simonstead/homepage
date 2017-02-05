@@ -10,6 +10,40 @@
   min-height: 320px;
   min-width: 480px; }
 
+.payments {
+  display: flex;
+  margin: 5em;
+  justify-content: space-between; }
+  .payments > * {
+    width: 20em;
+    height: 30em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 1px 1px 1px 1px;
+    border-radius: 5px; }
+    .payments > * .logo {
+      height: 80px;
+      max-width: 80%;
+      margin: 2em;
+      padding-bottom: 2em;
+      border-bottom: 2px solid #efefef; }
+    .payments > * form {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .payments > * form input {
+        width: 80%;
+        padding: 1rem;
+        margin: 1rem; }
+      .payments > * form button {
+        padding: 1rem;
+        font-size: 1rem;
+        border-radius: 4px;
+        background-color: #efefef;
+        border: 0; }
+
 body {
   font: 14px "Raleway", Helvetica, Arial, sans-serif;
   margin: 0;
@@ -23,21 +57,23 @@ body {
     opacity: 1; } }
 
 a {
-  color: #00B7FF; }
+  color: #de1616; }
 
 .title {
   font-size: 4em;
   margin: 0; }
 
 .index .section {
-  font-size: 11px;
+  font-size: 12px;
   display: inline-flex;
   flex-direction: column;
-  animation: fade-in 2s; }
+  animation: fade-in 2s;
+  max-width: 30em; }
   .index .section > h2 {
     margin-bottom: 0; }
   .index .section ul {
-    margin-top: 0; }
+    margin-top: 0;
+    list-style: none; }
 
 header {
   display: flex;
@@ -60,5 +96,16 @@ header {
   border-radius: 5em;
   height: 8em;
   padding-right: 1em; }
+
+a.tumblr {
+  display: flex;
+  align-items: center; }
+  a.tumblr img {
+    width: 40px;
+    border-radius: 50px;
+    margin-right: 1em; }
+
+.membership img {
+  max-width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

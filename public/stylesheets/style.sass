@@ -1,5 +1,6 @@
 @import "music"
 @import "movies"
+@import "payments"
 
 /////-------//
 /// LAYOUT //
@@ -20,21 +21,23 @@ body
 
 
 a
-  color: #00B7FF
+  color: #de1616
 
 .title
   font-size: 4em
   margin: 0
 
 .index .section
-  font-size: 11px
+  font-size: 12px
   display: inline-flex
   flex-direction: column
   animation: fade-in 2s
+  max-width: 30em
   & > h2
     margin-bottom: 0
   & ul
     margin-top: 0
+    list-style: none
 
 header
   display: flex
@@ -57,7 +60,13 @@ header
   height: 8em
   padding-right: 1em
 
-
+a.tumblr
+  display: flex
+  align-items: center
+  & img
+    width: 40px
+    border-radius: 50px
+    margin-right: 1em
 // footer
 //   width: 100vw
 //   height: 7em
@@ -85,3 +94,13 @@ header
 /////------//
 /// Index //
 //-------//
+
+
+
+/////------//
+/// membership //
+//-------//
+
+.membership
+  img
+    max-width: 100%

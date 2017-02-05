@@ -30,4 +30,9 @@ router.get('/movies', function(req, res, next) {
 router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'Get in touch' });
 });
+
+/* GET payments page. */
+router.get('/payments', function(req, res, next) {
+  res.render('payments', { title: 'Make a donation, or pay an invoice' });
+});
 module.exports = router;
