@@ -63,7 +63,7 @@ body {
     opacity: 1; } }
 
 a {
-  color: #de1616; }
+  color: #673AB7; }
 
 .title {
   font-size: 4em;
@@ -89,7 +89,7 @@ header {
   header p {
     margin: 0; }
   header .me {
-    border: 2px solid #de1616; }
+    border: 2px solid #673AB7; }
 
 .welcome {
   border-bottom: 3px solid #efefef; }
